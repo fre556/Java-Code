@@ -7,10 +7,13 @@ public class LinkedList {
 		java.util.LinkedList<String> cars = new java.util.LinkedList<String>();
 
 		cars.add("Bmw");
+		cars.add("Billy");
 		
 		System.out.print(cars);
 		
+		cars.remove("Billy");
 		
+		System.out.print(cars);
 		
 
 	}
