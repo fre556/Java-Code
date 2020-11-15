@@ -24,7 +24,7 @@ public class SortArray {
 	
 	static void bubbleSort(int[]arr) {
 		//gets length of array	
-		int n = arr.length;
+		int n = arr.length + 1;
 		
 		int temp =0;
 		
@@ -33,6 +33,7 @@ public class SortArray {
 				if (arr[j-1] > arr[j]) {
 					temp  = arr[j-1];
 					arr[j-1] = arr[j];
+					arr[j] = temp;
 				}
 			}
 		}
